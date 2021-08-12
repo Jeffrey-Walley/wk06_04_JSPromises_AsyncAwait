@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTS Promises and Async Awaits</title>
+</head>
+
+<body>
+
+    <!-- 
+           Promises have 3 states: Pending, Fullfilled, Rejected
+
+        Pending promises will either be fullfilled or rejected
+
+        promises can be chained: ex01 chaining
+
+                const myPromise = 
+                (new Promise(myExecutorFunc))
+                .then(handleFulfilledA,handleRejectedA)
+                .then(handleFulfilledB,handleRejectedB)
+                .then(handleFulfilledC,handleRejectedC);
+
+        // or, perhaps better ...
+
+                const myPromise =
+                (new Promise(myExecutorFunc))
+                .then(handleFulfilledA)
+                .then(handleFulfilledB)
+                .then(handleFulfilledC)
+                .catch(handleRejectedAny);
+
+      handling a rejected promise too early has consequences further down the
+                 promise chain, simpler to leave error handling until final .catch() 
+                 
+           
+         -- example in 'script.js'    
+         
+     
+         
+     *Using Promises with Async/Await** 
+
+     'async' keyword placed before function decleration
+
+     use 'fetch'
+
+      used example to retrieve 'avatar image' from github
+     
+     
+
+
+
+    -->
+
+
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
